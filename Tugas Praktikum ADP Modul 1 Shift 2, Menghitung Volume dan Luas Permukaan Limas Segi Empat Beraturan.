@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+float panjang,tinggi,lplimas,volume,luassegitiga,tinggitegak,panjang1,luaspermukaan;
+int main (){
+    cout <<"\nHai teman-teman, ini adalah program menghitung volume dan luas permukaan limas segi empat beraturan.";
+    cout <<"\n";
+    cout <<"\nMasukkan panjang tiap sisi limas (dalam cm): "; cin>>panjang;
+    cout <<"\nMasukkan tinggi limas (dalam cm): "; cin>>tinggi;
+    
+    volume = (panjang*panjang*tinggi)/3;
+    panjang1 = panjang/2;
+    tinggitegak = sqrt((panjang*panjang)-(panjang1*panjang1));
+    luassegitiga = (panjang*tinggitegak)/2;
+    luaspermukaan = (4*luassegitiga)+(panjang*panjang);
+    
+    cout <<"\nMaka volume nya adalah (dalam cm kubik) :"<<volume;
+    cout <<"\ndan luas permukaan limas segi empat beraturan tersebut adalah (dalam cm persegi): "<<luaspermukaan;
+    return 0;
+    
+}
