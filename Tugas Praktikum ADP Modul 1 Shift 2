@@ -1,0 +1,162 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+float a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,ab,ac,ad,ae,af,uasa,utsa,tugasa,kuisa,uasb,utsb,tugasb,kuisb,uasad,utsad,tugasad,kuisad,uask,utsk,tugask,kuisk,uaspm,utspm,tugaspm,kuispm,uaskd,utskd,tugaskd,kuiskd,uasfd,utsfd,tugasfd,kuisfd,uasbim,utsbim,tugasbim,kuisbim,agama,bindo,andat,kalk1,pengmat,kimdas,fisdas,bingmat,ipagama,ipbindo,ipandat,ipkalk1,ippengmat,ipkimdas,ipfisdas,ipbingmat,ipsems1,sksagama,sksbindo,sksandat,skskalk1,skspengmat,sksfisdas,skskimdas,sksbingmat;
+int main() {
+    cout << "Hai teman-teman, ini adalah program saya menghitung nilai dan juga IP pada semester 1.";
+    cout << "\nDengan memasukkan nilai, dapat dihitung nilai akhir pada mata kuliah tersebut.";
+    cout << "\nBerikut adalah bobot nilai pada tiap mata kuliah di semester 1.";
+    cout << "\n";
+    cout << "\n     Mata Kuliah                UAS    UTS    Tugas    Kuis";
+    cout << "\n       Agama                    30%    30%     35%       5%";
+    cout << "\n   Bahasa Indonesia             30%    30%     20%      20%";
+    cout << "\n    Analisis Data               30%    35%     20%      15%";
+    cout << "\n     Kalkulus 1                 30%    35%     20%      15%";
+    cout << "\n Pengantar Matematika           30%    35%     20%      15%";
+    cout << "\n     Kimia Dasar                30%    35%     15%      20%";
+    cout << "\n     Fisika Dasar               30%    30%     20%      20%";
+    cout << "\nBahasa Inggris Matematika       30%    30%     25%      15%";
+    cout << "\n";
+    cout << "\n";
+    cout << "\nMari kita hitung nilai anda.";
+    cout << "\nMohon masukkan nilai tiap mata kuliah terlebih dahulu.";
+
+    cout << "\n";
+    cout << "\nNilai Agama";
+    cout << "\nUAS :";cin >>uasa;
+    a = uasa*0.3;
+    cout << "UTS :";cin >>utsa;
+    b = utsa*0.3;
+    cout << "Tugas :";cin >>tugasa;
+    c = tugasa*0.35;
+    cout << "Kuis :";cin >>kuisa;
+    d = kuisa*0.05;
+
+    cout << "\n";
+    cout << "\nNilai Bahasa Indonesia";
+    cout << "\nUAS :";cin >>uasb;
+    e = uasb*0.3;
+    cout << "UTS :";cin >>utsb;
+    f = utsb*=0.3;
+    cout << "Tugas :";cin >>tugasb;
+    g = tugasb*0.2;
+    cout << "Kuis :";cin >>kuisb;
+    h = kuisb*0.2;
+
+    cout << "\n";
+    cout << "\nNilai Analisis Data";
+    cout << "\nUAS :";cin >>uasad;
+    i = uasad*0.3;
+    cout << "UTS :";cin >>utsad;
+    j = utsad*0.35;
+    cout << "Tugas :";cin >>tugasad;
+    k = tugasad*0.2;
+    cout << "Kuis :";cin >>kuisad;
+    l = kuisad*0.15;
+
+    cout << "\n";
+    cout << "\nNilai Kalkulus 1";
+    cout << "\nUAS :";cin >>uask;
+    m = uask*0.3;
+    cout << "UTS :";cin >>utsk;
+    n = utsk*0.35;
+    cout << "Tugas :";cin >>tugask;
+    o = tugask*0.2;
+    cout << "Kuis :";cin >>kuisk;
+    p = kuisk*0.15;
+
+    cout << "\n";
+    cout << "\nNilai Pengantar Matematika";
+    cout << "\nUAS :";cin >>uaspm;
+    q = uaspm*0.3;
+    cout << "UTS :";cin >>utspm;
+    r = utspm*0.35;
+    cout << "Tugas :";cin >>tugaspm;
+    s = tugaspm*0.2;
+    cout << "Kuis :";cin >>kuispm;
+    t = kuispm*0.15;
+
+    cout << "\n";
+    cout << "\nNilai Kimia Dasar";
+    cout << "\nUAS :";cin >>uaskd;
+    u = uaskd*0.3;
+    cout << "UTS :";cin >>utspm;
+    v = utskd*0.3;
+    cout << "Tugas :";cin >>tugaskd;
+    w = tugaskd*0.2;
+    cout << "Kuis :";cin >>kuiskd;
+    x = kuiskd*0.2;
+
+    cout << "\n";
+    cout << "\nNilai Fisika Dasar";
+    cout << "\nUAS :";cin >>uasfd;
+    y = uasfd*0.3;
+    cout << "UTS :";cin >>utsfd;
+    z = utsfd*0.3;
+    cout << "Tugas :";cin >>tugasfd;
+    aa = tugasfd*0.2;
+    cout << "Kuis :";cin >>kuisfd;
+    ab = kuisfd*0.2;
+
+    cout << "\n";
+    cout << "\nNilai Bahasa Inggris Matematika";
+    cout << "\nUAS :";cin >>uasbim;
+    ac = uasbim*0.3;
+    cout << "UTS :";cin >>utsbim;
+    ad = utsbim*0.3;
+    cout << "Tugas :";cin >>tugasbim;
+    ae = tugasbim*0.25;
+    cout << "Kuis :";cin >>kuisbim;
+    af = kuisbim*0.15;
+
+    agama = a+b+c+d;
+    bindo = e+f+g+h;
+    andat = i+j+k+l;
+    kalk1 = m+n+o+p;
+    pengmat = q+r+s+t;
+    kimdas = u+v+w+x;
+    fisdas = y+z+aa+ab;
+    bingmat = ac+ad+ae+af;
+
+    cout << "\n";
+    cout << "\n";
+    cout << "Berikut adalah nilai akhir dari semua mata kuliah";
+    cout << "\n";
+    cout << "\nMata Kuliah                 Nilai Akhir ";
+    cout << "\n Agama                      "<<agama  ;           
+    cout << "\n Bahasa Indonesia           "<<bindo    ;        
+    cout << "\n Analisis Data              "<<andat  ;         
+    cout << "\n Kalkulus 1                 "<<kalk1    ;       
+    cout << "\n Pengantar Matematika       "<<pengmat  ;          
+    cout << "\n Kimia Dasar                "<<kimdas   ;           
+    cout << "\n Fisika Dasar               "<<fisdas  ;            
+    cout << "\n Bahasa Inggris Matematika  "<<bingmat  ;             
+    cout << "\n";
+    cout << "\nMasukkan SKS Tiap Mata Kuliah";
+    cout << "\nAgama : ";cin>>sksagama;
+    cout << "Bahasa Indonesia : "; cin>>sksbindo;
+    cout << "Analisis Data : "; cin>>sksandat;
+    cout << "Kalkulus 1 : "; cin>>skskalk1;
+    cout << "Pengantar Matematika : "; cin>>skspengmat;
+    cout << "Kimia Dasar : "; cin>>skskimdas;
+    cout << "Fisika Dasar : "; cin>>sksfisdas;
+    cout << "Bahasa Inggris Matematika : "; cin>>sksbingmat;
+
+    ipagama = agama*sksagama;
+    ipbindo = bindo*sksbindo;
+    ipandat = andat*sksandat;
+    ipkalk1 = kalk1*skskalk1;
+    ippengmat = pengmat*skspengmat;
+    ipkimdas = kimdas*skskimdas;
+    ipfisdas = fisdas*sksfisdas;
+    ipbingmat = bingmat*sksbingmat;
+    ipsems1 = (ipagama+ipbindo+ipandat+ipkalk1+ippengmat+ipkimdas+ipfisdas+ipbingmat)/475;
+    cout <<"\n";
+    cout <<setprecision(2)<<"\nPada semester 1, anda Mendapatkan IP sebesar : "<<ipsems1;
+    cout <<"\n";
+    cout <<"\nCatatan : Jika IP anda melebihi dari 4, maka dipastikan anda salah memasukkan banyaknya SKS pada salah satu mata kuliah.";
+
+    return 0;
+
+
+}
