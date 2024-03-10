@@ -2,7 +2,7 @@
 #include <math.h>
 #include <iomanip>
 using namespace std;
-float panjang,tinggi,lplimas,volume,luassegitiga,tinggitegak,panjang1,luaspermukaan;
+float panjang,tinggi,volume,luassegitiga,tinggitegak,panjang1,luaspermukaan;
 int main (){
     cout <<"\nHai teman-teman, ini adalah program menghitung volume dan luas permukaan limas segi empat beraturan.";
     cout <<"\n";
