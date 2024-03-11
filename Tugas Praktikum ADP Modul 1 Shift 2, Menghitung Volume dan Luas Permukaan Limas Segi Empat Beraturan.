@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <iomanip>
 using namespace std;
 float panjang,tinggi,volume,luassegitiga,tinggitegak,panjang1,luaspermukaan;
 int main (){
