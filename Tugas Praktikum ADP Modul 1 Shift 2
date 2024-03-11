@@ -3,6 +3,9 @@
 using namespace std;
 float a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,ab,ac,ad,ae,af,uasa,utsa,tugasa,kuisa,uasb,utsb,tugasb,kuisb,uasad,utsad,tugasad,kuisad,uask,utsk,tugask,kuisk,uaspm,utspm,tugaspm,kuispm,uaskd,utskd,tugaskd,kuiskd,uasfd,utsfd,tugasfd,kuisfd,uasbim,utsbim,tugasbim,kuisbim,agama,bindo,andat,kalk1,pengmat,kimdas,fisdas,bingmat,ipagama,ipbindo,ipandat,ipkalk1,ippengmat,ipkimdas,ipfisdas,ipbingmat,ipsems1,sksagama,sksbindo,sksandat,skskalk1,skspengmat,sksfisdas,skskimdas,sksbingmat;
 int main() {
+    cout << "\nDiva Raihan Handriansyah";
+    cout << "\n2310432046";
+    cout << "\n";
     cout << "Hai teman-teman, ini adalah program saya menghitung nilai dan juga IP pada semester 1.";
     cout << "\nDengan memasukkan nilai, dapat dihitung nilai akhir pada mata kuliah tersebut.";
     cout << "\nBerikut adalah bobot nilai pada tiap mata kuliah di semester 1.";
