@@ -1,0 +1,85 @@
+print("Praktikum ADP Modul 2 Shift 2")
+print("Diva Raihan Handriansyah")
+print("2310432046")
+print()
+print("    <============================>")
+print("      Bus PT. ANS Lintas Sumatera")
+print("    <============================>")
+print()
+print("     Tujuan               Harga")
+print("1.   Medan             Rp.250.000 ")
+print("2.   Jambi             Rp.300.000 ")
+print("3.   Pekanbaru         Rp.310.000 ")
+print("4.   Bandar Lampung    Rp.380.000 ")
+print("5.   Bengkulu          Rp.290.000 ")
+print("6.   Palembang         Rp.350.000 ")
+print()
+tujuan = int(input("Masukkan Tujuan Anda (1-6): "))
+print()
+print(" <=======================================>")
+print("        Class                 Harga")
+print("1.   First Class            Rp.30.000")
+print("2.   Bisnis Class           Rp.20.000")
+print("3.   Economy Class          Rp.10.000")
+print(" <=======================================>")
+print()
+kelas = int(input("Masukkan Kelas yang anda pilih (1-3): "))
+tiket = int(input("Masukkan jumlah tiket yang ingin dibeli: "))
+print()
+print(" <=======================================>")
+if (tujuan == 1) :
+    total = 250000
+    total1 = (250000*tiket)
+    print("    Tujuan Anda          : Medan")
+elif (tujuan == 2) :
+    total = 300000
+    total1 = (300000*tiket)
+    print("   Tujuan Anda          : Jambi")
+elif (tujuan == 3) :
+    total = 310000
+    total1 = (310000*tiket)
+    print("    Tujuan Anda          : Pekanbaru")
+elif (tujuan == 4) :
+    total = 380000
+    total1 = (380000*tiket)
+    print("    Tujuan Anda          : Bandar Lampung")
+elif (tujuan == 5) :
+    total = 290000
+    total1 = (290000*tiket)
+    print("    Tujuan Anda          : Bengkulu")
+elif (tujuan == 6) :
+    total = 350000
+    total1 = (350000*tiket)
+    print("    Tujuan Anda          : Palembang")
+else :
+    print("    Tujuan Anda          : Tidak ada dalam tujuan")
+
+if (kelas == 1) :
+    total2 = (30000)
+    print("    Kelas yang dipilih   : First Class")
+elif (kelas == 2) :
+    total2 = (20000)
+    print("    Kelas yang dipilih   : Bisnis Class")
+elif (kelas == 3) :
+    total2 = (10000)
+    print("    Kelas yang dipilih   : Economy Class")
+else :
+    print("    Kelas yang dipilih   : Tidak ada dalam kelas diatas")
+    
+if (tiket == 3) :
+    diskon = int(0.05*total)
+elif (tiket == 4) :
+    diskon = int(0.05*total)
+elif (tiket >= 5) :
+    diskon = int(0.1*total)
+else :
+    diskon = int(0)
+
+totalasli = total1+total2
+totaldiskon = totalasli-diskon
+
+print("    Jumlah tiket         :",tiket)
+print("    Total Harga          :",totalasli)
+print("    Diskon               :",diskon)
+print("    Total Setelah Diskon :",totaldiskon)
+print(" <========================================>")
