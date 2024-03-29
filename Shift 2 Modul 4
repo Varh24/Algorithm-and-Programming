@@ -1,0 +1,21 @@
+print("Praktikum ADP Modul 4")
+print("Diva Raihan Handriansyah")
+print("2310432046")
+print()
+print("ini adalah program mengubah huruf vokal menjadi huruf i dalam setiap kalimat.")
+print()
+a = str(input("Tulis minimal 3 lirik lagu : "))
+b = 'AIUEOaiueo'
+c = ''
+d = 'AIUEO'
+for i in a:
+    if i in b:
+        if i in d:
+            c += 'I'
+        else :
+            c += 'i'
+    else :
+        c += i
+print()
+print("Hasil : ")
+print(f"{c}")
