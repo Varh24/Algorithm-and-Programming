@@ -1,0 +1,50 @@
+import math
+
+print("Praktikum ADP Shift 2 Modul 5")
+print("Diva Raihan Handriansyah")
+print("2310432046")
+print()
+
+asd = 'y'
+while (asd == 'y' or asd == 'Y') :
+    print("Berikut adalah tabel fungsi yang digunakan untuk menghitung sebuah nilai.")
+    print("1. Jika x > 0, f(x) = 3x^2 + 7x - 2")
+    print("   Jika x < 0, f(x) = 2x^2 - 5x - 4")
+    print("2. g(x) = (f(x))^2 - (f(x))^1/2")
+    print("3. h(x) = f(x) * g(x)")
+    print()
+
+    n = int(input("Masukkan banyak data n yang ingin dihitung = "))
+    x = []
+    for i in range (n):
+        x = x + [float(input(f"Input nilai x ke-{i+1} = "))]
+    print()
+    
+    print("|-------------------------------------------------------------------------|")
+    print("|    No.   ||     (x)     ||     f(x)     ||     g(x)     ||     h(x)     |")
+    print("|-------------------------------------------------------------------------|")
+    for i in range (n) :
+        if x[i] > 0 :
+            b = 3 * x[i] * x[i] + 7 * x[i] - 2
+            c = b * b - math.sqrt(b)
+            d = b * c
+        elif x[i] < 0:
+            b = 2 * x[i] * x[i] - 5 * x[i] - 4
+            c = b * b - math.sqrt(b)
+            d = b * c
+        else : 
+            # 0 disini menunjukkan bahwa jika kita menginput nilai x = 0 dan hasil dari f(x) = 0, g(x) = 0, h(x) = 0, artinya tidak ada.
+            b = 0
+            c = 0
+            d = 0
+        # Disini saya memakai string format, untuk merapikan output tabel di bawah ini.
+        # Mohon maaf jika saya memakai string format ini.
+        # Saya tidak tahu bagaimana lagi agar output tabel dibawah ini bisa rapi.
+        # Saya bisa tahu string format ini karena dari website, berikut linknya: https://www.w3schools.com/python/ref_string_format.asp.
+        # Sekiranya dapat dimaklumi. Terimakasih.
+        print("|    {:<6}||     {:<8}||    {:<10.2f}||   {:<11.3f}||   {:<11.3f}|".format(i+1, x[i], b, c, d))
+    print("|-------------------------------------------------------------------------|")
+    print("\nCatatan: Dalam program c++, nan atau -nan, artinya tidak terdefinisi di bilangan real. Dalam program python langsung tidak terdeteksi di domain.")
+    print()
+    asd = str(input("Apakah anda ingin memasukkan nilai x lagi ? (Y/N)\n"))
+    print()
