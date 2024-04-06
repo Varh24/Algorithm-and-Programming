@@ -1,0 +1,67 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+int main (){
+    cout << "Praktikum ADP Shift 2 Modul 5" << endl;
+    cout << "Diva Raihan Handriansyah"<<endl;
+    cout << "2310432046"<<endl;
+    cout << endl;
+    char asd = 'y';
+    while ( asd == 'y' || asd == 'Y'){
+        cout << "Berikut adalah tabel fungsi yang digunakan untuk menghitung sebuah nilai."<<endl;
+        cout << "1. Jika x > 0, f(x) = 3x^2 + 7x - 2"<<endl;
+        cout << "   Jika x < 0, f(x) = 2x^2 - 5x - 4"<<endl;
+        cout << "2. g(x) = (f(x))^2 - (f(x))^1/2"<<endl;
+        cout << "3. h(x) = f(x) * g(x)"<<endl;
+        cout << endl;
+        int n, i, a;
+        cout << "Masukkan banyak data n yang ingin dihitung = "; cin >> n;
+        double x[n], b, c, d;
+        for (i=0; i<n; i++){
+            cout << "Input nilai x ke-" << i+1 << " = ";
+            cin >> x[i];
+        }
+        cout << endl;
+        cout << "|-------------------------------------------------------------------------|"<<endl;
+        cout << "|    No.   ||     (x)     ||     f(x)     ||     g(x)     ||     h(x)     |" <<endl;
+        cout << "|-------------------------------------------------------------------------|"<<endl;
+        for (i=0; i<n; i++){
+            if (x[i] > 0){
+                b = 3 * x[i] * x[i] + 7 * x[i] - 2;
+                c = b * b - sqrt(b);
+                d = b * c;
+            }
+            else if (x[i] < 0){
+                b = 2 * x[i] * x[i] - 5 * x[i] - 4;
+                c = b * b - sqrt(b);
+                d = b * c;
+            } else {
+                //0 disini menunjukkan bahwa jika kita menginput nilai x = 0, f(x) = 0, g(x) = 0, h(x) = 0, artinya tidak ada.
+                b = 0;
+                c = 0;
+                d = 0;
+            }
+            //Disini saya memakai library iomanip, untuk merapikan output tabel di bawah ini.
+            //Mohon maaf jika saya memakai library iomanip ini.
+            //Saya tidak tahu bagaimana lagi agar output tabel dibawah ini bisa rapi.
+            //Saya bisa tahu library ini karena dari youtube, berikut linknya: https://www.youtube.com/watch?v=t5XOij2CT5E.
+            //Sekiranya dapat dimaklumi. Terimakasih.
+            cout <<"|    "<<setiosflags(ios::left)<<setw(6)<<i+1<<"|";
+            cout <<"|     "<<setiosflags(ios::left)<<setw(8)<<x[i]<<"|";
+            cout <<"|     "<<setiosflags(ios::left)<<setw(9)<<b<<"|";
+            cout <<"|   "<<setiosflags(ios::left)<<setw(11)<<c<<"|";
+            cout <<"|   "<<setiosflags(ios::left)<<setw(11)<<d<<"|";
+            cout <<endl;
+        }
+
+        cout << "|-------------------------------------------------------------------------|"<<endl;
+        cout <<endl;
+        cout << "Catatan: nan atau -nan, artinya tidak terdefinisi di bilangan real. Dalam program python langsung tidak terdeteksi di domain.";
+        cout << endl;
+        cout << "\nApakah anda ingin memasukkan nilai x lagi ? (Y/N)"<<endl;
+        cin >> asd;
+        cout << endl;
+
+    }
+}
