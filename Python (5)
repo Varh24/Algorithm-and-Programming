@@ -8,7 +8,7 @@ print()
 asd = 'y'
 while (asd == 'y' or asd == 'Y') :
     print("Berikut adalah tabel fungsi yang digunakan untuk menghitung sebuah nilai.")
-    print("1. Jika x > 0, f(x) = 3x^2 + 7x - 2")
+    print("1. Jika x >= 0, f(x) = 3x^2 + 7x - 2")
     print("   Jika x < 0, f(x) = 2x^2 - 5x - 4")
     print("2. g(x) = (f(x))^2 - (f(x))^1/2")
     print("3. h(x) = f(x) * g(x)")
