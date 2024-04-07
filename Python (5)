@@ -4,7 +4,6 @@ print("Praktikum ADP Shift 2 Modul 5")
 print("Diva Raihan Handriansyah")
 print("2310432046")
 print()
-
 asd = 'y'
 while (asd == 'y' or asd == 'Y') :
     print("Berikut adalah tabel fungsi yang digunakan untuk menghitung sebuah nilai.")
