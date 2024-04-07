@@ -27,20 +27,15 @@ int main (){
         cout << "|    No.   ||     (x)     ||     f(x)     ||     g(x)     ||     h(x)     |" <<endl;
         cout << "|-------------------------------------------------------------------------|"<<endl;
         for (i=0; i<n; i++){
-            if (x[i] > 0){
+            if (x[i] >= 0){
                 b = 3 * x[i] * x[i] + 7 * x[i] - 2;
                 c = b * b - sqrt(b);
                 d = b * c;
             }
-            else if (x[i] < 0){
+            else {
                 b = 2 * x[i] * x[i] - 5 * x[i] - 4;
                 c = b * b - sqrt(b);
                 d = b * c;
-            } else {
-                //0 disini menunjukkan bahwa jika kita menginput nilai x = 0, f(x) = 0, g(x) = 0, h(x) = 0, artinya tidak ada.
-                b = 0;
-                c = 0;
-                d = 0;
             }
             //Disini saya memakai library iomanip, untuk merapikan output tabel di bawah ini.
             //Mohon maaf jika saya memakai library iomanip ini.
