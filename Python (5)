@@ -24,19 +24,14 @@ while (asd == 'y' or asd == 'Y') :
     print("|    No.   ||     (x)     ||     f(x)     ||     g(x)     ||     h(x)     |")
     print("|-------------------------------------------------------------------------|")
     for i in range (n) :
-        if x[i] > 0 :
+        if x[i] >= 0 :
             b = 3 * x[i] * x[i] + 7 * x[i] - 2
             c = b * b - math.sqrt(b)
             d = b * c
-        elif x[i] < 0:
+        else :
             b = 2 * x[i] * x[i] - 5 * x[i] - 4
             c = b * b - math.sqrt(b)
             d = b * c
-        else : 
-            # 0 disini menunjukkan bahwa jika kita menginput nilai x = 0 dan hasil dari f(x) = 0, g(x) = 0, h(x) = 0, artinya tidak ada.
-            b = 0
-            c = 0
-            d = 0
         # Disini saya memakai string format, untuk merapikan output tabel di bawah ini.
         # Mohon maaf jika saya memakai string format ini.
         # Saya tidak tahu bagaimana lagi agar output tabel dibawah ini bisa rapi.
