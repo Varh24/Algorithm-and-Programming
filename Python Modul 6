@@ -1,0 +1,87 @@
+print("Tugas Praktikum Modul 6 Shift 2")
+print("Diva Raihan Handriansyah")
+print("2310432046")
+print()
+n = int(input("Masukkan jumlah mahasiswa   = "))
+m = int(input("Masukkan jumlah mata kuliah = "))
+print()
+print("Catatan : Agar tabel rapi mohon masukkan nama mata kuliah dan nama mahasiswa dengan singkat. Hehe :)")
+print()
+a = []
+for i in range (n) :
+    c = str(input(f"Masukkan nama mahasiswa ke-{i+1} = "))
+    a.append(c)
+print()
+
+print("Masukkan nama setiap mata kuliah yang ada.")
+asdf = []
+for i in range (m) :
+    asd = str(input(f"Masukkan nama mata kuliah ke-{i+1} = "))
+    asdf.append(asd)
+    
+print()
+print("Masukkan nilai akhir untuk setiap mahasiswa pada setiap mata kuliah yang ada.")
+e = []
+for i in range (n) :
+    print(a[i])
+    azx = []
+    for j in range(m):
+        d = int(input(f"Nilai akhir pada mata kuliah {asdf[j]} = "))
+        azx.append(d)
+    e.append(azx)
+    print()
+
+print("Tabel nilai ujian.")
+print("          ", end = " ")
+for i in range (m) :
+    print(f"|---------------", end = "|")
+print()
+print("          ", end = " ")
+for asd in asdf :
+    print(f"|    {asd:>6}     ", end = "|")
+print()
+print("|----------", end = "")
+for i in range (m) :
+    print(f"|---------------", end = "|")
+print()
+for i in range (len(a)) :
+    c = a[i]
+    print(f"|  {c:>4}    ", end = "")
+    for d in e[i] :
+        print(f"|    {d:>6}     ", end = "|")
+    print()
+print("|----------", end = "")
+for i in range (m) :
+    print(f"|---------------", end = "|")
+print()
+print()
+print("Rata-rata nilai ujian dari setiap mahasiswa :")
+for i in range(n):
+    ytou = 0
+    for d in e[i]:
+        ytou += d
+    asdfg = ytou / m
+    print(f"Rata-rata nilai ujian {a[i]}: {asdfg:.2f}")
+print()
+print("Berikut nilai tertinggi dan terendah pada setiap mata kuliah beserta mahasiswa yang mendapatkannya.")
+for i in range (m) :
+    z = -1
+    zx = 101
+    x = []
+    xy = []
+    for j in range (n) :
+        d = e[j][i]
+        if d > z :
+            z = d
+            x = a[j]
+        elif d == z:
+            x = x + ", " + (a[j])
+        if d < zx :
+            zx = d
+            xy = a[j]
+        elif d == zx :
+             xy = xy + ", " + (a[j])   
+                
+    print(asdf[i])
+    print("Nilai tertinggi :",z, "didapatkan oleh",x)
+    print("Nilai terendah  :",zx, "didapatkan oleh",xy)
