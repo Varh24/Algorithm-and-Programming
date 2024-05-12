@@ -1,0 +1,91 @@
+def konversi_suhu(n, satuan) :
+        if satuan == 'C':
+            f = (n * 9/5) + 32
+            r = n * 4/5
+            k = n + 273.15
+            return f, r, k
+        elif satuan == 'F':
+            c = (n - 32) * 5/9
+            r = c * 4/5
+            k = c + 273.15
+            return c, r, k
+        elif satuan == 'R':
+            c = n * 5/4
+            f = (c * 9/5) + 32
+            k = c + 273.15
+            return c, f, k
+        elif satuan == 'K':
+            c = n - 273.15
+            f = (c * 9/5) + 32
+            r = c * 4/5
+            return c, f, r
+
+print("Tugas Praktikum Shift 2 Modul 2")
+print("Diva Raihan Handriansyah")
+print("2310432046")
+print()
+print("Program konversi suhu.")
+satuan = str(input("Masukkan satuan suhu (C/R/F/K) = "))
+if satuan == 'C':
+    while True:
+        n = float(input("Masukkan angka suhu dalam derajat = "))
+        if n < -273.15 :
+            print("Angka suhu yang dimasukkan melewati batas untuk Celcius.")
+        else :
+            break
+elif satuan == 'F':
+    while True:
+        n = float(input("Masukkan angka suhu dalam derajat = "))
+        if n < -459.67 :
+            print("Angka suhu yang dimasukkan melewati batas untuk Fahrenheit.")
+        else :
+            break
+elif satuan == 'R':
+    while True:
+        n = float(input("Masukkan angka suhu dalam derajat = "))
+        if n < -218.52 :
+            print("Angka suhu yang dimasukkan melewati batas untuk Reamur.")
+        else :
+            break
+elif satuan == 'K':
+    while True:
+        n = float(input("Masukkan angka suhu dalam derajat = "))
+        if n < 0 :
+            print("Angka suhu yang dimasukkan melewati batas untuk Kelvin.")
+        else :
+            break
+else :
+    print("Masukkan 'C' sebagai satuan Celcius, 'R' sebagai satuan Reamur, 'F' sebagai satuan Fahrenheit,dan 'K' sebagai satuan Kelvin.")
+    print("Ulangi kembali program ini. Terimakasih :)")
+    print()
+
+print()
+print("Tabel Konversi Suhu.")
+print("||-------------------||--------------------||")
+print("||    Satuan Suhu    ||    Derajat Suhu    ||")
+print("||-------------------||--------------------||")
+hasil = konversi_suhu(n, satuan)
+if satuan == 'C':
+    print("||      Celcius      ||      {:5.2f}         ||".format((n)))
+    print("||     Fahrenheit    ||      {:5.2f}         ||".format(hasil[0]))
+    print("||      Reamur       ||      {:5.2f}         ||".format(hasil[1]))
+    print("||      Kelvin       ||     {:5.2f}         ||".format(hasil[2]))
+    print("||-------------------||--------------------||")
+elif satuan == 'F':
+    print("||      Celcius      ||      {:5.2f}         ||".format((hasil[0])))
+    print("||     Fahrenheit    ||      {:5.2f}         ||".format(n))
+    print("||      Reamur       ||      {:5.2f}         ||".format(hasil[1]))
+    print("||      Kelvin       ||     {:5.2f}         ||".format(hasil[2]))
+    print("||-------------------||--------------------||")
+elif satuan == 'R':
+    print("||      Celcius      ||      {:5.2f}         ||".format(hasil[0]))
+    print("||     Fahrenheit    ||      {:5.2f}         ||".format(hasil[1]))
+    print("||      Reamur       ||      {:5.2f}         ||".format(n))
+    print("||      Kelvin       ||     {:5.2f}         ||".format(hasil[2]))
+    print("||-------------------||--------------------||")
+elif satuan == 'K':
+    print("||      Celcius      ||      {:5.2f}       ||".format(hasil[0]))
+    print("||     Fahrenheit    ||      {:5.2f}       ||".format(hasil[1]))
+    print("||      Reamur       ||      {:5.2f}       ||".format(hasil[2]))
+    print("||      Kelvin       ||      {:5.2f}         ||".format(n))
+    print("||-------------------||--------------------||")
