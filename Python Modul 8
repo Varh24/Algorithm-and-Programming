@@ -4,9 +4,8 @@ print("2310432046")
 print()
 def tambah(a,b,c,d):
     with open ("databuku.txt", "a") as file:
-        teks = f"\nJudul buku: {a}\nNama penulis: {b}\nNama penerbit: {c}\nTahun terbit: {d}\n"
+        teks = f"\nJudul buku   : {a}\nNama penulis : {b}\nNama penerbit: {c}\nTahun terbit : {d}\n"
         file.write(teks)
-#Disini saya memakai r+ agar bisa baca sekaligus nambah data, ini didapatkan dari link https://www.petanikode.com/python-file/ dan https://stackoverflow.com/questions/2769061/how-to-erase-the-file-contents-of-text-file-in-python. :)
 def hapus():
     open("databuku.txt", "w").close()
 def tampilkan():
@@ -17,7 +16,7 @@ def tampilkan():
 while True:
     print("|------------------------|")
     print("|---------|Menu|---------|")
-    print("|    1. Tambah data      |")
+    print("|    1. Tambah data      |") 
     print("|    2. Hapus data       |")
     print("|    3. Tampilkan data   |")
     print("|    4. Program selesai  |")
