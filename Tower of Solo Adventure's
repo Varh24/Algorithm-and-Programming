@@ -4,7 +4,7 @@ import random
 
 from termcolor import colored
 
-#Cerita
+#Cerita1
 os.system('cls')
 time.sleep(2)
 print(colored("                                            |========================================|", "light_grey"))
@@ -22,8 +22,7 @@ print(colored("                                            |====================
 print()
 print()
 
-def main1():
-
+def main():
     open("Stat.txt", "w").close()
     def stat(nama, player_health):
         with open ("Stat.txt", "a") as file:
@@ -52,7 +51,8 @@ def main1():
             print()
         
         return results[player_index][monster_index]
-    #Cerita
+    
+    #Cerita2
     os.system('cls')
     time.sleep(2)
     print(colored("                                            |====================================================|", "light_grey"))
@@ -70,7 +70,8 @@ def main1():
     nama = input("Nama : ")
 
     os.system('cls')
-    #Cerita
+
+    #Cerita3
     time.sleep(3)
     print(colored("                                            |====================================================|", "light_grey"))
     print(colored(f"                                             Selamat datang {nama} di dunia Tower of Solo Adventure ", "light_cyan"))
@@ -91,7 +92,8 @@ def main1():
     time.sleep(4)
     os.system('cls')
     print()
-    #Cerita1
+
+    #Cerita4
     time.sleep(1)
     print("Hari ke-1082 sejak bumi diserang oleh makhluk asing yang berbentuk aneh seperti mitologi dahulu yang menjadi nyata. ")
     time.sleep(1)
@@ -103,7 +105,8 @@ def main1():
     print("Tekan Enter untuk lanjut . . . . .")
     input()
     os.system('cls')
-    #Cerita2
+
+    #Cerita5
     time.sleep(2)
     print("Di suatu tempat . . . . .")
     time.sleep(2)
@@ -130,7 +133,8 @@ def main1():
     print("Tekan Enter untuk lanjut . . . . . . ")
     input()
     os.system('cls')
-    #Cerita3
+
+    #Cerita6
     time.sleep(3)
     print(colored("                                            |========================================|", "light_grey"))
     print("                                            |",colored(" Anda telah ditetapkan menjadi","light_blue"),colored("player", "red"), " |")
@@ -168,6 +172,8 @@ def main1():
     print()
     print("Tekan Enter untuk lanjut . . . . .. ")
     input()
+
+    #Cerita7
     os.system('cls')
     time.sleep(3)
 
@@ -248,7 +254,8 @@ def main1():
             break
     
     os.system('cls')
-    #Cerita4
+
+    #Cerita8
     time.sleep(1)
     print(colored(f"{nama}", "light_blue"),": Terimakasih User telah membantu saya memberi tahu hal tersebut. Tapi dengan apa saya menyerangnya? ")
     print()
@@ -264,6 +271,8 @@ def main1():
     print()
     print("Tekan Enter untuk lanjut . . . . .. ")
     input()
+    
+    #Cerita9
     os.system('cls')
 
     time.sleep(3)
@@ -340,6 +349,8 @@ def main1():
     input()
     os.system('cls')
     print()
+
+    #Cerita10
     time.sleep(3)
     print(colored("                                            |========================================|", "light_grey"))
     print("                                            |",colored("             Lantai","light_blue"),colored("Dua ", "red"), "              |")
@@ -414,6 +425,8 @@ def main1():
     print("Tekan Enter untuk lanjut . . . . .. ")
     input()
     os.system('cls')
+
+    #Cerita11
     print()
     time.sleep(3)
     print(colored("                                            |========================================|", "light_grey"))
@@ -506,6 +519,8 @@ def main1():
     input() 
     os.system('cls')
     print()
+    
+    #Cerita12
     time.sleep(3)
     print(colored("                                            |========================================|", "light_grey"))
     print("                                            |",colored("             Lantai","light_blue"),colored("Empat", "red"), "             |")
@@ -611,6 +626,8 @@ def main1():
     print("Tekan Enter untuk lanjut . . . . .. ")
     input()
     os.system('cls')
+
+    #Cerita13
     print()
     time.sleep(3)
     print(colored("                                            |========================================|", "light_grey"))
@@ -651,7 +668,7 @@ def main1():
                     continue
                 monster = random.choice(azx)
                 print(f"Dragon memilih : {monster}")
-                print()
+                print() 
                 a1 = suit(player, monster)
                 print(a1)
                 time.sleep(2)
@@ -705,6 +722,8 @@ def main1():
     print("Tekan Enter untuk lanjut . . . . .. ")
     input()
     os.system('cls')
+
+    #Cerita14
     time.sleep(2)
     print()
     print()
@@ -726,7 +745,7 @@ while True:
     a = int(input("Pilihan anda (1/2) = "))
     if a == 1:
         print()
-        main1()
+        main()
         continue
     elif a == 2:
         break
