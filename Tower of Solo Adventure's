@@ -1,0 +1,709 @@
+import os
+import time
+import random
+
+from termcolor import colored
+
+os.system('cls')
+time.sleep(2)
+print(colored("                                            |========================================|", "light_grey"))
+print("                                            |",colored(" Anda telah ditetapkan menjadi","light_blue"),colored("player", "red"), " |")
+print(colored("                                            |========================================|", "light_grey"))
+print()
+time.sleep(4)
+os.system('cls')
+time.sleep(3)
+print(colored("                                            |=======================================|", "light_grey"))
+print(colored("                                            | Silahkan memilih pilihan di bawah ini |", "light_grey"))
+print(colored("                                            |", "light_grey"), "1. Bermain Tower of Solo Adventure", colored("   |", "light_grey"))
+print(colored("                                            |", "light_grey"), "2. Keluar dari program", colored("               |", "light_grey"))
+print(colored("                                            |=======================================|", "light_grey"))
+print()
+print()
+
+def main1():
+
+    open("Stat.txt", "w").close()
+    def stat(nama, player_health):
+        with open ("Stat.txt", "a") as file:
+            stat = f"\nNama Player : {nama}\nHealth Point : {player_health}" 
+            file.write(stat)
+    def pop():
+        with open ("Stat.txt", "r") as file:
+            teks = file.readlines()
+            for i in teks[-2:]:
+                print(i)
+
+    def suit(player, monster):
+        results = [
+            ["Semangat", "Kamu keren", "Hati-hati"],
+            ["Hati-hati", "Semangat", "Kamu keren"],
+            ["Kamu keren", "Hati-hati", "Semangat"]
+        ]
+        choices = ['batu', 'gunting', 'kertas']
+    
+        player_index = choices.index(player)
+        monster_index = choices.index(monster)
+    
+        if player == monster:
+            time.sleep(1)
+            print("Miss. . . . ")
+            print()
+        
+        return results[player_index][monster_index]
+        
+    os.system('cls')
+    time.sleep(2)
+    print(colored("                                            |====================================================|", "light_grey"))
+    print(colored("                                            | Anda telah memilih bermain Tower of Solo Adventure |", "light_cyan"))
+    print(colored("                                            |====================================================|", "light_grey"))
+    time.sleep(4)
+    os.system('cls')
+    time.sleep(2)
+    print(colored("                                                       |=============================|", "light_grey"))
+    print(colored("                                                         Silahkan masukkan nama anda ", "light_cyan"))
+    print(colored("                                                       |=============================|", "light_grey"))
+    print()
+    print()
+
+    nama = input("Nama : ")
+
+    os.system('cls')
+    time.sleep(3)
+    print(colored("                                            |====================================================|", "light_grey"))
+    print(colored(f"                                             Selamat datang {nama} di dunia Tower of Solo Adventure ", "light_cyan"))
+    print(colored("                                            |====================================================|", "light_grey"))
+    time.sleep(4)
+    os.system('cls')
+    time.sleep(3)
+    print(colored("                                            |====================================================================|", "light_grey"))
+    print(colored("                                            |", "light_grey"),colored("  Ini adalah game petualangan mengalahkan monster setiap lantai", "light_cyan"), colored("   |", "light_grey"))
+    print(colored("                                            |", "light_grey"),colored(" dengan sistem penyerangannya memakai batu, gunting, dan kertas", "light_cyan"), colored("   |", "light_grey"))
+    print(colored("                                            |====================================================================|", "light_grey"))
+    time.sleep(4)
+    os.system('cls')
+    time.sleep(3)
+    print(colored("                                            |==================================|", "light_grey"))
+    print(colored("                                            |", "light_grey"),colored("         Selamat Bermain", "light_cyan"), colored("        |", "light_grey"))
+    print(colored("                                            |==================================|", "light_grey"))
+    time.sleep(4)
+    os.system('cls')
+    print()
+
+    time.sleep(3)
+    print("Hari ke-1082 sejak bumi diserang oleh makhluk asing yang berbentuk aneh seperti mitologi dahulu yang menjadi nyata. ")
+    time.sleep(3)
+    print("Mulai dari goblin, imp, naga, orc, troll, bahkan demon sekalipun menyerang bumi. Mereka bermunculan dari lubang retakan dimensi yang muncul secara tiba-tiba. ")
+    time.sleep(3)
+    print("Para manusia yang tersisa mulai bersatu dan membentuk kekuatan untuk merebut bumi kembali dari kehancuran.")
+    time.sleep(3)
+    os.system('cls')
+    time.sleep(2)
+    print("Di suatu tempat . . . . .")
+    time.sleep(4)
+    os.system('cls')
+
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": khoammmm....... ")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": sepertinya aku ketiduran lagi setelah ngerjain tugas untuk uap tadi malam")
+    print()
+    time.sleep(3)
+    print("Ia pun melihat ke arah jendela")
+    time.sleep(3)
+    print()
+
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": seperti biasa, dunia hancur kembali karena serangan mereka yang tiada hentinya")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": sangat membosankan")
+    time.sleep(3)
+    print()
+
+    time.sleep(3)
+    print("Ketika ia bangkit dari tempat tidur, ia melihat sebuah kotak pesan yang melayang tepat di depan mukanya.")
+    time.sleep(3)
+    os.system('cls')
+    time.sleep(3)
+    
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored(" Anda telah ditetapkan menjadi","light_blue"),colored("player", "red"), " |")
+    print(colored("                                            |========================================|", "light_grey"))
+
+    time.sleep(4)
+    os.system('cls')
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": APA ITU?")
+    time.sleep(3)
+    print()
+
+    print("Ia kaget hingga bertanya-tanya apa itu")
+    time.sleep(3)
+    print("Hingga ia dikagetkan untuk kedua kalinya ketika suara seseorang berada di dalam kepalanya.")
+    time.sleep(3)
+    print()
+
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Hai, disini kamu telah aku pilih sebagai orang yang menjalani sebuah rintangan agar menjadi kuat di masa depan nanti.")
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Kotak pesan yang ada didepan mu itu adalah sistem yang akan membantumu untuk membuatmu menjadi kuat.")
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Dan aku akan memasukkanmu ke dalam Tower of Nightmare's, sebuah dungoen yang berbentuk tower dengan 5 lantai dimana lantai ke-5 adalah tempat boss berada.")
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Alasan aku memanggilmu ke dalam dungeon tersebut adalah untuk membuat mu menjadi sangat kuat dimasa depan nanti, sehingga kamu dapat membalas monster yang menyerang bumi mu.")
+    time.sleep(3)
+    print()
+
+    time.sleep(3)
+    print(f"{nama} tidak tahu kalau dia sedang dijadikan sebagai pion bertempur oleh sang dewa kelak nanti.")
+    time.sleep(3)
+    print("Perang yang dimana perang antar dewa atau lebih dikenal dengan",colored("RAGNAROK", "blue"),".")
+    time.sleep(3)
+    print()
+    time.sleep(3)
+    print(f"Tanpa persiapan apapun, {nama} dipanggil secara paksa untuk masuk kedalam Tower of Nightmare's")
+    time.sleep(3)
+
+    os.system('cls')
+    time.sleep(3)
+
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("    Welcome To","light_blue"),colored("Tower of Nightmare's", "red"), "   |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(5)
+    os.system('cls')
+    time.sleep(3)
+
+    print(f"{nama} sedang kebingungan apa yang terjadi dan apa yang harus dilakukannya.")
+    time.sleep(3)
+    print()
+    print(f"Untuk itu kami meminta kepada anda untuk memilih pilihan dibawah ini.")
+    time.sleep(3)
+    print("1. Penjelasan tentang Tower of Nightmare's ")
+    print("2. Penjelasan tentang lantai yang ada didalam Tower of Nightmare's ")
+    print("3. Penjelasan tentang sistem penyerangan yang dilakukan ")
+    print("4. Penjelasan tentang monster yang ada didalam Tower of Nightmare's ")
+    print("5. Selesai/Lanjut ")
+    time.sleep(3)
+
+    def tower():
+        time.sleep(3)
+        print("Tower of Nightmare's adalah sebuah dungeon berlantai 5, dimana lantai ke-5 adalah lantai terkahir tempat boss berada. Player harus mengalahkan boss agar bisa kembali ke bumi.")
+    def lantai():
+        time.sleep(2)
+        print("Berikut penjelasan tentang lantai yang ada di dalam Tower of Nightmare's")
+        print()
+        time.sleep(3)
+        print("Setiap lantai memiliki tempat dan mosnter yang berbeda-beda. Setiap kamu naik lantai, semua stat akan dipulihkan.")
+        time.sleep(3)
+        print("Lantai 1 adalah tempat dimana padang rumput yang sangat luas dengan sedikitnya pepohonan, bersamaan dengan angin yang berhembus dengan tenang. Pada lantai 1 ini terdapat monster goblin.")
+        time.sleep(3)
+        print("Lantai 2 adalah tempat hutan belantara yang dimana ditengah-tengah hutan tersebut ada seekor Harpy yang besar")
+        time.sleep(3)
+        print("Lantai 3 adalah gua yang dihuni oleh satu Troll ")
+        time.sleep(3)
+        print("Lantai 4 adalah sebuah istana yang didalamnya ada boss dungeon, dan didepan istana tersebut ada Knight of Guardian")
+        time.sleep(3)
+        print("Lantai 5 adalah tempat yang didalamnya ada seekor Dragon, merupakan Boss Dungeon dari Tower of Nightmare's")
+    def sistem():
+        time.sleep(3)
+        print("Sistem penyerangan yang ada dalam game ini memakai sistem batu, gunting, dan kertas.")
+        time.sleep(3)
+        print("Jika player menang dalam pertandingan batu, gunting, dan kertas, maka monster akan kehilangan 1 HP (Health Point), begitu juga sebaliknya")
+        time.sleep(3)
+    def monster():
+        print("Berikut penjelasan tentang monster yang ada di dalam Tower of Nightmare's")
+        print()
+        time.sleep(3)
+        print("Goblin : Seekor monster berbentuk manusia yang memiliki 2 HP")
+        time.sleep(3)
+        print("Harpy : Seekor burung yang besar dan memiliki 4 HP")
+        time.sleep(3)
+        print("Troll : Seekor raksasa dengan palu besarnya dan memiliki 5 HP")
+        time.sleep(3)
+        print("Knight of Guardian : Ksatria penjaga istana dan memiliki 7 HP")
+        time.sleep(3)
+        print("Dragon : Boss dungeon yang memiliki 10 HP")
+    
+    while True:
+        print()
+        ab = int(input("Pilih (1/2/3/4/5) = "))
+        if ab == 1:
+            print()
+            tower()
+        elif ab == 2:
+            print()
+            lantai()
+        elif ab == 3:  
+            print()
+            sistem()
+        elif ab == 4:
+            print()
+            monster()
+        elif ab == 5:
+            break
+    
+    os.system('cls')
+
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Terimakasih User telah membantu saya memberi tahu hal tersebut. Tapi dengan apa saya menyerangnya? ")
+    print()
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Aku memberimu sebuah pedang, perisai dan juga health point kamu, yang dimana ketika kamu menang dalam pertarungan batu, gunting, dan kertas, kamu bisa melawannya dengan pedang tersebut")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Terimakasih dewa, aku akan melawan monster dengan serius dan berhati-hati")
+    print()
+    time.sleep(3)
+    print(f"{nama} pun berangkat ke tempat monster berada dan melawannya")
+    time.sleep(3)
+
+    os.system('cls')
+
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("             Lantai","light_blue"),colored("Satu", "red"), "              |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(4)
+
+    os.system('cls')
+
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Sepertinya didepan ada seekor goblin ")
+    print()
+    time.sleep(3)
+    print("BATTLE DIMULAI!!!")
+
+    def game1():
+        azx = ['batu', 'gunting', 'kertas']
+        player_health = 10
+        goblin = 2
+        print("Pilihanmu: Ketik 'Batu', 'Gunting', atau 'Kertas' ")  
+        while player_health > 0 and goblin > 0:
+            player = input("\nPilihanmu : ").lower()
+            if player not in azx:
+                print("Pilihan tidak valid.")
+                continue
+            monster = random.choice(azx)
+            print(f"Monster memilih : {monster}")
+            print()
+            a1 = suit(player, monster)
+            print(a1)
+            if a1 == "Kamu keren":
+                goblin -= 1
+                print()
+                print(f"Goblin kehilangan 1 HP, tersisa {goblin} HP")
+            elif a1 == "Hati-hati":
+                player_health -= 1
+                print()
+                print(f"Kamu kehilangan 1 HP, tersisa {player_health} HP")
+                if player_health <= 0:
+                    print()
+                    print("Kamu kalah!, kamu dihidupkan kembali dan permainan diulang")
+                    goblin = 2
+                    player_health = 10
+                    continue
+            else:
+                print()
+                print("Mari lakukan lagi dattebayooou")
+                continue
+            print()
+            print(f"HP Kamu: {player_health}, HP Monster: {goblin}")
+            print()
+            if goblin <= 0:
+                break
+        stat(nama, player_health)
+        print("Kamu telah mengalahkan seekor goblin, ini stat kamu.")
+        print()
+        pop()
+        print()
+        time.sleep(3)
+        print(colored(f"{nama}", "light_blue"),": Akhirnya aku mengalahkannya, walaupun agak sedikit kaku tapi aku berhasil membunuhnya ")
+        time.sleep(3)
+        print()
+        time.sleep(2)
+        print("Semua stat dipulihkan")
+        print()
+        time.sleep(2)
+        print(colored(f"{nama}", "light_blue"),": Mari kita ke lantai 2")
+        time.sleep(3)
+    game1()
+    os.system('cls')
+    print()
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("             Lantai","light_blue"),colored("Dua ", "red"), "              |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(3)
+    print()
+    os.system('cls')
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Akhirnya aku sampai juga di lantai 2 ")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Didepan ada seekor burung yang besar, pasti itu adalah harpy")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Mari kita lawannnn!!!!!!")
+    print()
+    print(f"{nama} pun melawannya")
+    time.sleep(3)
+    print("BATTLE DIMULAI!!!")
+    def game2():
+        azx = ['batu', 'gunting', 'kertas']
+        player_health = 10
+        harpy = 4
+        print("Pilihanmu: Ketik 'Batu', 'Gunting', atau 'Kertas' ")  
+        while player_health > 0 and harpy > 0:
+            player = input("\nPilihanmu : ").lower()
+            if player not in azx:
+                print("Pilihan tidak valid.")
+                continue
+            monster = random.choice(azx)
+            print(f"Harpy memilih : {monster}")
+            print()
+            a1 = suit(player, monster)
+            print(a1)
+            if a1 == "Kamu keren":
+                harpy -= 1
+                print()
+                print(f"Harpy kehilangan 1 HP, tersisa {harpy} HP")
+            elif a1 == "Hati-hati":
+                player_health -= 1
+                print()
+                print(f"Kamu kehilangan 1 HP, tersisa {player_health} HP")
+                if player_health <= 0:
+                    print()
+                    print("Kamu kalah!, kamu dihidupkan kembali dan permainan diulang")
+                    harpy = 4
+                    player_health = 10
+                    continue
+            else:
+                print()
+                print("Mari lakukan lagi dattebayooou")
+                continue
+            print()
+            print(f"HP Kamu: {player_health}, HP Harpy: {harpy}")
+            print()
+            if harpy <= 0:
+                break
+        stat(nama, player_health)
+        print("Kamu telah mengalahkan seekor Harpy, ini stat kamu")
+        print()
+        pop()
+        time.sleep(3)
+        print(colored(f"{nama}", "light_blue"),": Burung ini sangatlah besar, sungguh beruntung sekali aku bisa mengalahkannya ")
+        time.sleep(3)
+        print()
+        print("Semua stat dipulihkan")
+        print()
+        time.sleep(2)
+        print(colored(f"{nama}", "light_blue"),": Mari kita ke lantai 3")
+        time.sleep(3)
+    game2()
+    os.system('cls')
+    print()
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("             Lantai","light_blue"),colored("Tiga", "red"), "              |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(3)
+    print()
+    os.system('cls')
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Akhirnya sampai juga di lantai 3 ")
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Selamat karena telah mencapai lantai 3. Sebagai hadiah atas pencapaianmu, tidak jauh dari tempat mu berdiri ada sebuah pedang yang tertancap di tanah. Itu adalah pedang peninggalan dari pejuang di tanah ini. Ambillah")
+    time.sleep(3)
+    print()
+    print("Ternyata pedang yang diberi oleh",colored("God of War", "light_red"),"adalah pedang dengan stat attack +1")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Terimakasih dewa, aku akan menyelesaikan dungeon ini.")
+    time.sleep(3)
+    print()
+    print("Setelah ia bersiap-siap, sampailah ia di tempat raksasa yang sangat besar atau Troll")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Wahhhh, besar sekali raksasanya. Baiklah mari kita serang dia.")
+    time.sleep(3)
+    print()
+    print(colored(f"{nama}", "light_blue"),": SASAGEYOUUUUUUUUUUUUU!!!!!!!!!")
+    print()
+    time.sleep(3)
+    print(f"{nama} pun melawannya")
+    time.sleep(3)
+    print()
+    print("BATTLE DIMULAI!!!")
+    print()
+    def game3():
+            azx = ['batu', 'gunting', 'kertas']
+            player_health = 10
+            troll = 5
+            print("Pilihanmu: Ketik 'Batu', 'Gunting', atau 'Kertas' ")  
+            while player_health > 0 and troll > 0:
+                player = input("\nPilihanmu : ").lower()
+                if player not in azx:
+                    print("Pilihan tidak valid.")
+                    continue
+                monster = random.choice(azx)
+                print(f"Troll memilih : {monster}")
+                print()
+                a1 = suit(player, monster)
+                print(a1)
+                if a1 == "Kamu keren":
+                    troll -= 2
+                    print()
+                    print(f"Troll kehilangan 2 HP, tersisa {troll} HP")
+                elif a1 == "Hati-hati":
+                    player_health -= 2
+                    print()
+                    print(f"Kamu kehilangan 2 HP, tersisa {player_health} HP")
+                    if player_health <= 0:
+                        print()
+                        print("Kamu kalah!, kamu dihidupkan kembali dan permainan diulang")
+                        troll = 5
+                        player_health = 10
+                        continue
+                else:
+                    print()
+                    print("Mari lakukan lagi dattebayooou")
+                    continue
+                print()
+                print(f"HP Kamu: {player_health}, HP Troll: {troll}")
+                print()
+                if troll <= 0:
+                    break
+            stat(nama, player_health)
+            print("Kamu telah mengalahkan Troll, ini stat kamu")
+            print()
+            pop()
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),": Pedang yang diberikan oleh dewa sangatlah overpowered guys, terimakasih sang dewa.")
+            time.sleep(3)
+            print()
+            print("Semua stat dipulihkan")
+            print()
+            time.sleep(2)
+            print(colored(f"{nama}", "light_blue"),": Akhirnya sampai ke lantai 4, tempat ksatria of guardain berjaga")
+            time.sleep(3)
+    game3()
+    os.system('cls')
+    print()
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("             Lantai","light_blue"),colored("Empat", "red"), "             |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(3)
+    print()
+    os.system('cls')
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Fyuhhhhh.......")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Dengan pedang dan perisai yang diberikan oleh dewa, akhirnya aku sampai ke lantai 4")
+    time.sleep(3)
+    print(colored("God of War", "light_red"),": Aku ucapkan selamat lagi kepadamu, karena telah menyelesaikan tiga lantai. Oh iya, setelah kamu mengalahkan knight of guardian kamu bisa bertemu dengan aku dan memilih hadiah yang ada nantinya.")
+    time.sleep(3)
+    print()
+    print("Hadiah misterius apa yang bahkan",colored("God of War", "light_red"),"sendiri yang memberi hadiah")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Terimakasih dewa, dengan adanya item yang bagus seperti itu, aku menjadi bersemangat kembali.")
+    time.sleep(3)
+    print()
+    print("Setelah ia bersiap-siap, sampailah ia di depan patung knight of guardian")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Wahhhh, besar sekali patungnya. Baiklah mari kita serang dia.")
+    time.sleep(3)
+    print()
+    print(colored(f"{nama}", "light_blue"),": SHINZOU WA SASAGEYOUUUUUUUUU!!!!!")
+    print()
+    time.sleep(3)
+    print(f"{nama} pun melawannya")
+    time.sleep(3)
+    print()
+    print("BATTLE DIMULAI!!!")
+    print()
+    def game4():
+            azx = ['batu', 'gunting', 'kertas']
+            player_health = 10
+            knight = 7
+            print("Pilihanmu: Ketik 'Batu', 'Gunting', atau 'Kertas' ")  
+            while player_health > 0 and knight > 0:
+                player = input("\nPilihanmu : ").lower()
+                if player not in azx:
+                    print("Pilihan tidak valid.")
+                    continue
+                monster = random.choice(azx)
+                print(f"Knight memilih : {monster}")
+                print()
+                a1 = suit(player, monster)
+                print(a1)
+                if a1 == "Kamu keren":
+                    knight -= 2
+                    print()
+                    print(f"Knight kehilangan 2 HP, tersisa {knight} HP")
+                elif a1 == "Hati-hati":
+                    player_health -= 3
+                    print()
+                    print(f"Kamu kehilangan 3 HP, tersisa {player_health} HP")
+                    if player_health <= 0:
+                        print()
+                        print("Kamu kalah!, kamu dihidupkan kembali dan permainan diulang")
+                        knight = 7
+                        player_health = 10
+                        continue
+                else:
+                    print()
+                    print("Mari lakukan lagi dattebayooou")
+                    continue
+                print()
+                print(f"HP Kamu: {player_health}, HP Knight: {knight}")
+                print()
+                if knight <= 0:
+                    break
+            stat(nama, player_health)
+            print("Kamu telah mengalahkan Knight of Guardian, ini stat kamu")
+            print()
+            pop()
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),": Fyuhh... Fyuhh .... ")
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),": Akhirnya aku sampai ke lantai terakhir, lebih baik aku duduk sebentar dan beristirahat")
+            time.sleep(3)
+            print()
+            print(f"Ketika {nama} sedang beristirahat, ",colored("God of War", "light_red"), "muncul tepat dihadapan sang player")
+            time.sleep(3)
+            print(f"{nama} sangat terkejud, ia bahkan sampai berlarian seketika secara spontan")
+            time.sleep(3)
+            print()
+            print(colored("God of War", "light_red"),f": Hai {nama}, mengapa kamu sangat terkejut begitu hahahha. Sesuai dengan janjiku, aku akan memberimu hadiah. Potion of Qi (health +5) dan Sword of Flames (attack +2)")
+            time.sleep(3)
+            print()
+            print("Semua stat dipulihkan")
+            print()
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),":Terimakasih dewa, aku akan gunakan ini sebaik mungkin untuk menyelesaikan dungeon ini.")
+            time.sleep(3)
+            print()
+            print(f"{nama} pun berangkat ke lantai terakhir")
+            time.sleep(3)
+    game4()
+    os.system('cls')
+    print()
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored("             Lantai","light_blue"),colored("Terakhir", "red"), "                |")
+    print(colored("                                            |========================================|", "light_grey"))
+    time.sleep(3)
+    print()
+    os.system('cls')
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Fyuhhhhh......., akhirnya aku bisa sampai ke lantai terakhir")
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Terimakasih dewa, dengan adanya item yang bagus seperti itu, aku semakin yakin bisa menyelesaikan dungeon ini")
+    time.sleep(3)
+    print()
+    print("Setelah ia bersiap-siap, sampailah ia di tempat naga tertidur.")
+    print()
+    time.sleep(3)
+    print(colored(f"{nama}", "light_blue"),": Wahhhh, besar sekali naganya. Baiklah mari kita serang dia.")
+    time.sleep(3)
+    print()
+    print(colored(f"{nama}", "light_blue"),": SASAAAGEYOUUUUUUUUUU!!!!!!!!, SHINZOU WA SASAGEYOUUUUUUUUU!!!!!")
+    print()
+    time.sleep(3)
+    print(f"{nama} pun melawan boss dari dungeon Tower of Nightmare's")
+    time.sleep(3)
+    print()
+    print("BATTLE DIMULAI!!!")
+    print()
+    def game5():
+            azx = ['batu', 'gunting', 'kertas']
+            player_health = 15
+            naga = 10
+            print("Pilihanmu: Ketik 'Batu', 'Gunting', atau 'Kertas' ")  
+            while player_health > 0 and naga > 0:
+                player = input("\nPilihanmu : ").lower()
+                if player not in azx:
+                    print("Pilihan tidak valid.")
+                    continue
+                monster = random.choice(azx)
+                print(f"Dragon memilih : {monster}")
+                print()
+                a1 = suit(player, monster)
+                print(a1)
+                if a1 == "Kamu keren":
+                    naga -= 4
+                    print()
+                    print(f"Dragon kehilangan 4 HP, tersisa {naga} HP")
+                elif a1 == "Hati-hati":
+                    player_health -= 4
+                    print()
+                    print(f"Kamu kehilangan 1 HP, tersisa {player_health} HP")
+                    if player_health <= 0:
+                        print()
+                        print("Kamu kalah!, kamu dihidupkan kembali dan permainan diulang")
+                        naga = 10
+                        player_health = 15
+                        continue
+                else:
+                    print()
+                    print("Mari lakukan lagi dattebayooou")
+                    continue
+                print()
+                print(f"HP Kamu: {player_health}, HP Dragon: {naga}")
+                print()
+                stat()
+                if naga <= 0:
+                    break
+            stat(nama, player_health)
+            print("Kamu telah mengalahkan Dragon (Final Boss), ini stat terakhir kamu")
+            print()
+            pop()
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),": Fyuhh... fyuhh .... huuhhhh ..... huhh..... fyuhhhh.....")
+            time.sleep(3)
+            print(colored(f"{nama}", "light_blue"),": Akhirnya..... Aku mengalahkan sang final boss, Dragon")
+            time.sleep(3)
+            print()
+            print(f"{nama} pingsan karena kelelahan dan ia pun tertidur")
+            time.sleep(3)
+            print(f"Ketika {nama} terbangun, ia sudah berada ditempat tidurnya, ia sangat terkejud untuk kesekian kalinya. Ia ternyata dipindahkan ke bumi lagi sesuai janji dari dewa tersebut.")
+            time.sleep(3)
+            print()
+            print(colored("God of War", "light_red"),f": Hai {nama}, selamat karena telah menyelesaikan dungeon Tower of Nightmare's milikku ini. Dengan begitu kamu telah mencukupi syarat untuk mengikuti pemilihan apostle yang ada nantinya")
+            print()
+            time.sleep(3)
+            print(f"{nama} sangat kebingungan apa yang akan terjadi nanti. Sebelum ia kebingungan pun, ia telah ditinggalkan pergi oleh dewa tersebut. Tidak ada lagi suara yang seperti biasa {nama} dengar dalam kepalanya")
+            time.sleep(3)
+            print()
+    game5()
+    os.system('cls')
+    time.sleep(3)
+
+    print()
+    print()
+    time.sleep(3)
+    print(colored("                                            |========================================|", "light_grey"))
+    print("                                            |",colored(f"           Selamat {nama} ", "light_cyan"),"            |")
+    print(colored("                                            |========================================|", "light_grey"))
+    print()
+    time.sleep(2)
+    print("Selamat kepada anda karena telah menyelesaikan Tower of Nightmare's")
+    print()
+    time.sleep(3)
+    print("Terimakasih telah bermain Tower of Solo Adventure")
+    print()
+    print("Ingin bermain lagi?")
+
+while True:
+    a = int(input("Pilihan anda (1/2) = "))
+    if a == 1:
+        print()
+        main1()
+        continue
+    elif a == 2:
+        break
+    else:
+        print("Ulangi kembali")
+        continue
