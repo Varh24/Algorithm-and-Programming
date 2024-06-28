@@ -693,7 +693,6 @@ def main():
                 print()
                 print(f"HP Kamu: {player_health}, HP Dragon: {naga}")
                 print()
-                stat()
                 if naga <= 0:
                     break
             stat(nama, player_health)
